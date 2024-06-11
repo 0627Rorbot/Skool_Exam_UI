@@ -38,11 +38,11 @@ const App = () => {
         <main className="grow">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="signin" element={<SignIn />} />
-            <Route path="signup" element={<SignUp />} />
+            <Route path="/signin" element={<SignIn />} />
+            <Route path="/signup" element={<SignUp />} />
             <Route path="problem" element={<Problem />} />
             <Route path="test" element={<Test />}>
-              <Route path="home"  element={<Test_Home />} />
+              <Route path="home" element={<Test_Home />} />
               <Route path="main" element={<Test_Main />} />
             </Route>
             <Route component={NotFound} />
